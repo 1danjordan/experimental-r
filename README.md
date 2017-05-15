@@ -1,5 +1,10 @@
 # Experimental-R
 
+```
+docker pull dandermotj/experimental-r
+docker run --rm -ti experimental-r
+```
+
 Experimental-R contains Dockerfiles for customised R builds.
 Inspired by the Rocker project, Experimental-R conveniently lets 
 users try out experimental R builds without having to compile R 

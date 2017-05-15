@@ -85,8 +85,7 @@ RUN cd /tmp/R-devel \
                --without-recommended-packages \
                --program-suffix=dev \
 	&& make \
-	&& make install \
-	&& rm -rf /tmp/R-devel
+	&& make install 
 
 ## Set Renviron to get libs from base R install
 RUN echo "R_LIBS=\${R_LIBS-'/usr/local/lib/R/site-library:/usr/local/lib/R/library:/usr/lib/R/library'}" >> /usr/local/lib/R/etc/Renviron
@@ -100,3 +99,4 @@ RUN cd /usr/local/bin \
 && ln -s Rdevel RD \
 && ln -s Rscriptdevel RDscript
 
+CMD ["RD"]

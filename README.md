@@ -6,7 +6,6 @@ cd experimental-r
 docker build -t experimental-r .
 docker run experimental-r
 ```
-![experimental-r-demo](few-examples.gif)
 
 Experimental-R contains Dockerfiles for customised R builds.
 Inspired by the Rocker project, Experimental-R conveniently lets 
@@ -19,6 +18,8 @@ one killer feature - a native pipe operator `|>`. No more dependencies
 on magrittr's `%>%`, or confusing tracebacks when pipelines go wrong.
 It's probably the most demanded feature to be implemented by R core, 
 and now it's here (kind of :smirk:)!
+
+![experimental-r-demo](few-examples.gif)
 
 ## Why 
 

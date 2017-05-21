@@ -1,9 +1,12 @@
 # Experimental-R
 
 ```
-docker pull dandermotj/experimental-r
-docker run --rm -ti experimental-r
+git clone https://github.com/dandermotj/experimental-r.git
+cd experimental-r
+docker build -t experimental-r .
+docker run experimental-r
 ```
+![experimental-r-demo](few-examples.gif)
 
 Experimental-R contains Dockerfiles for customised R builds.
 Inspired by the Rocker project, Experimental-R conveniently lets 
